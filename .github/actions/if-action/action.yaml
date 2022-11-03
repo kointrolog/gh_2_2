@@ -13,4 +13,4 @@ runs:
     - name: Test Build
       shell: bash
       if: ${{inputs.run-tests}} == 'true'
-      run: echo "hede"
+      run: echo ${{inputs.run-tests}}

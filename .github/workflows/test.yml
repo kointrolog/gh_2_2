@@ -8,7 +8,9 @@ jobs:
   vpush:
     runs-on: ubuntu-latest
     steps:
-      - name: Check out repository
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: run if-actino
         uses: ./.github/actions/if-action
         with:
           run-tests: false

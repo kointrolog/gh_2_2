@@ -12,5 +12,5 @@ runs:
   steps:
     - name: Test Build
       shell: bash
-      if: ${{inputs.run-tests}} == 'true'
+      if: ${{inputs.run-tests == 'true'}} 
       run: echo ${{inputs.run-tests}}

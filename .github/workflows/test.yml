@@ -13,4 +13,4 @@ jobs:
       - name: run if-actino
         uses: ./.github/actions/if-action
         with:
-          run-tests: "false"
+          run-tests: "true"

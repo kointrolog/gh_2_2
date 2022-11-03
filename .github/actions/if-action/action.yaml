@@ -1,0 +1,16 @@
+name: Build And Test Spring Boot App
+description: Performs standard installDistBoot installBoot builds and test target
+
+inputs:
+  run-tests:
+    description: Whether the test suite should run or not
+    default: "true"
+    required: false
+
+runs:
+  using: "composite"
+  steps:
+    - name: Test Build
+      shell: bash
+      if: ${{inputs.run-tests}} == 'true'
+      run: echo "hede"

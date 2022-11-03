@@ -1,0 +1,11 @@
+name: Build And Test Spring Boot App
+description: Performs standard installDistBoot installBoot builds and test target
+
+
+jobs:
+  vpush:
+    steps:
+      - name: Check out repository
+        uses: ./.github/actions/if-action
+        with:
+          run-tests: false

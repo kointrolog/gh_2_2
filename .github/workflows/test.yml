@@ -1,6 +1,10 @@
 name: Build And Test Spring Boot App
 description: Performs standard installDistBoot installBoot builds and test target
 
+on:
+  push:
+    branches:
+      - 'master'
 
 jobs:
   vpush:
